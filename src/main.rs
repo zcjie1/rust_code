@@ -1,13 +1,19 @@
-fn greet_world() {
-    let southern_germany = "Grüß Gott!";
-    let chinese = "世界，你好";
-    let english = "World, hello";
-    let regions = [southern_germany, chinese, english];
-    for region in regions {
-        println!("{}", region);
-    }
-}
+#![allow(unused)]
+#![allow(dead_code)]
 
 fn main() {
-    greet_world();
+    let mut x = 5;
+    println!("The value of x is: {}", x);
+    x = 6;
+    println!("The value of x is: {}", x);
+
+    let _y = 10;
+
+    // 字符串类型
+    let spaces = "   ";
+    // usize数值类型
+    let spaces = spaces.len();
+
+    let guess: i32 = "42".parse().expect("Not a number!");
+
 }
